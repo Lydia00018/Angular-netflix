@@ -1,0 +1,27 @@
+
+<nav class="desplegable">
+
+  <ul class="caja-menu">
+	
+			<li  class="generos"><a (click)="mostrar=!mostrar">Géneros </a>
+       <a  *ngIf="!mostrar" (click)="mostrar=!mostrar" class="abajo"><i class="fas fa-angle-down"></i></a>   
+       <a  *ngIf="mostrar"(click)="mostrar=!mostrar" class="arriba"><i class="fas fa-angle-up"></i></a>   
+      
+       <ul *ngIf="mostrar" class="columna-izquierda">
+                <li><a href="#">Romance</a></li>
+                <li><a href="#">Acción</a></li>
+                <li><a href="#">Comedia</a></li>
+                <li><a href="#">Aventura</a></li>
+                <li><a href="#">Fantasía</a></li>
+                <li><a href="#">Terror</a></li>
+                <li><a href="#">Familiar</a></li>
+                <li><a href="#">Misterio</a></li>
+                <li><a href="#">Historia</a></li>
+                <li><a href="#">Cine Bélico</a></li>
+              </ul>
+           
+            </li>  
+        
+      </ul>
+  
+	</nav>

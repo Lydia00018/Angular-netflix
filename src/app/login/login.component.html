@@ -1,0 +1,27 @@
+<nav class="caja-login">
+	<ul>
+		<li id="clic-login"><a (click)="login=!login" id="caja-login" routerLinkActive="menu-active">Login</a>
+			<div id="drop-login" *ngIf="login">
+				 <form [formGroup]="formularioLogin" (ngSubmit)="onSubmit()" class="login">
+			        <div class="elem-login elem-email">
+			        	<label>Email:</label>
+			        	<input type="email" formControlName="email" required id="email-input">
+			        	<div *ngIf="enviado && f.email.errors">
+			            	<div *ngIf="f.email.errors.required" class="msg-error">El email es obligatorio</div>
+		        		</div> 
+		        	</div>
+		        	<div class="elem-login">
+			        	<label>Contraseña:</label>
+			        	<input type="password" formControlName="password" required>
+			          	<div *ngIf="enviado && f.password.errors" class="invalid-feedback">
+			            	<div *ngIf="f.password.errors.required" class="msg-error">La contraseña es obligatoria</div>
+			          	</div>
+			        </div>
+			        <div class="caja-boton">
+			        	<button type="button" id="enviar">Enviar</button>
+			        </div>
+				</form>
+			</div>
+		</li>
+	</ul>		
+</nav>

@@ -1,0 +1,14 @@
+ <section>
+	<app-desplegable-generos></app-desplegable-generos>
+</section>
+
+<section class="display-peliculas">
+	
+	<article *ngFor="let pelicula of peliculas" class="peliculas-caja">
+		<app-pelicula [movie]="pelicula"></app-pelicula>
+	</article>
+</section> 
+<section>
+	 <app-scroll></app-scroll> 
+	
+	</section>

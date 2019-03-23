@@ -1,0 +1,20 @@
+
+<div class="genero1">
+    <p>Comedia</p>
+  </div>
+
+
+<section class="display-peliculas">
+  <article *ngFor="let pelicula of peliculas"  class="peliculas-caja">
+      <!-- <app-pelicula  [movie]="pelicula"></app-pelicula> -->
+      <!-- <div class="texto" > 
+          <p>{{pelicula.title}}</p> 
+        </div> -->
+          <app-pelicula-scroll [movie]="pelicula"> </app-pelicula-scroll>
+          
+        
+    </article>
+  
+  </section> 
+
+  

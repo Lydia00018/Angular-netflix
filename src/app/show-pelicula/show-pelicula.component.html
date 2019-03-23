@@ -1,0 +1,10 @@
+<section class="background-pelicula">
+	<img [src]="detalle.backdrop_path | showImg" id="img-background">
+	<aside class="left-info">
+		<div class="text-info">
+			<h1 id="titulo-pelicula"> {{detalle.title}}</h1>
+			<p id="desc-pelicula">Descripción: {{detalle.overview}}</p>
+			<p id="año-pelicula">Fecha de estreno: {{detalle.release_date}}</p>		
+		</div>	
+	</aside>
+</section>

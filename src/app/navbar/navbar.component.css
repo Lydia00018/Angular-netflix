@@ -1,0 +1,26 @@
+.menu{
+	width: 300px;
+	overflow: hidden;
+	padding: 20px 40px;
+}
+
+.elem-menu{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.item-menu{
+	text-decoration: none;
+	color: #A5A5A5;
+	cursor: pointer;
+	height: 23px;
+}
+
+.item-menu:hover{
+	color: white;
+}
+
+.menu-active{
+	color: #DE3C4B;
+}

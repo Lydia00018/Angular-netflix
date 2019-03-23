@@ -1,0 +1,11 @@
+<section class="display-peliculas">
+	<article *ngFor="let pelicula of peliculas" class="peliculas-caja">
+		<app-pelicula [movie]="pelicula"></app-pelicula>
+	</article>
+	<article *ngIf="notFound" class="peliculas-caja1">
+		<figure class="errorNotfound">
+			<img src="../../assets/img/roboterror.png" alt="robot not found">
+		</figure>
+		<h2>¡Oh oh! No hemos logrado conseguir lo que buscas</h2>
+	</article>
+</section>

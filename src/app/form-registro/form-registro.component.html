@@ -1,0 +1,51 @@
+<section class="registrar">
+  <form [formGroup]="formularioRegistro" (ngSubmit)="onSubmit()" class="formulario-registro">
+    <h1>Formulario de registro</h1>
+    <fieldset class="personal-data">
+      <div class="elem-form">
+          <div class="caja-label"><label>Nombre</label></div>
+          <div class="caja-input"><input type="text" formControlName="nombre"></div>
+          <div *ngIf="enviado && f.nombre.errors">
+            <div *ngIf="f.nombre.errors.required" class="msg-error">El nombre es obligatorio</div>
+          </div>
+      </div>
+      <div class="elem-form">
+          <div class="caja-label"><label>Apellido 1:</label></div>
+          <div class="caja-input"><input type="text" formControlName="apellido1" required></div>
+          <div *ngIf="enviado && f.apellido1.errors">
+            <div *ngIf="f.apellido1.errors.required" class="msg-error">El primer apellido es obligatorio</div>
+          </div>
+        </div> 
+        <div class="elem-form">
+          <div class="caja-label"><label>Apellido 2:</label></div>
+          <div class="caja-input"><input type="text" formControlName="apellido2"></div>
+        </div>   
+        <div class="elem-form">
+          <div class="caja-label"><label>Email:</label></div>
+          <div class="caja-input"><input type="email" formControlName="email" required></div>
+          <div *ngIf="enviado && f.email.errors">
+            <div *ngIf="f.email.errors.required" class="msg-error">El email es obligatorio</div>
+        </div> 
+         </div>
+        <div class="elem-form">
+          <div class="caja-label"><label>Contraseña:</label></div>
+          <div class="caja-input"><input type="password" formControlName="password" required></div>
+          <div *ngIf="enviado && f.password.errors" class="invalid-feedback">
+            <div *ngIf="f.password.errors.required" class="msg-error">La contraseña es obligatoria</div>
+            <div *ngIf="f.password.errors.minlength" class="msg-error">La contraseña debe tener al menos seis caracteres</div>
+          </div>
+        </div>
+        <div class="elem-form">
+          <div class="caja-label"><label>Repetir contraseña:</label></div>
+          <div class="caja-input"><input type="password" formControlName="confirmPassword" required></div>
+          <div *ngIf="enviado && f.confirmPassword.errors" class="invalid-feedback">
+            <div *ngIf="f.confirmPassword.errors.required" class="msg-error">El campo confirmar contraseña es obligatorio</div>
+            <div *ngIf="f.confirmPassword.errors.comprobarPass" class="msg-error">La contraseña no coincide</div>
+          </div>
+        </div> 
+    </fieldset>
+    <div class="caja-boton">
+        <button type="submit" id="submit">Enviar</button>
+    </div>
+  </form>
+</section>

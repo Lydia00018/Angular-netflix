@@ -1,0 +1,60 @@
+.caja-perfil{
+	width: 200px;
+}
+
+ul{
+	list-style-type: none;
+	overflow: hidden;
+}
+
+#caja-imagen{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 170px;
+	text-decoration: none;
+	padding: 18px 39px;
+	color: #A5A5A5;
+}
+
+#caja-imagen:hover{
+	color: white;
+}
+
+#img-perfil{
+	height: 23px;
+	margin-right: 10px;
+	border-radius: 50%
+}
+
+li a:hover, #clic-perfil a:hover {
+  background-color: #DE3C4B;
+  z-index: 5;
+}
+
+#drop-perfil {
+	display: none;
+	background-color: #A5A5A5;
+	width: 200px;
+	z-index: 5;
+}
+
+#drop-perfil a {
+	color: #040C0F;
+	text-decoration: none;
+	padding: 20px 40px;
+	z-index: 5;
+}
+
+#drop-perfil a:hover {
+	background-color: white;
+	z-index: 5;
+}
+
+#clic-perfil:hover #drop-perfil {
+	position: absolute;
+	display: flex;
+	flex-direction:column;
+	color: white;
+	z-index: 5;
+}

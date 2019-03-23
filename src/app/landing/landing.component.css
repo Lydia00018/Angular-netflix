@@ -1,0 +1,31 @@
+.landing-background{
+	margin-top: 150px
+}
+
+.top{
+
+}
+
+.column-login{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 50%M
+}
+
+.caja-btn{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;;
+}
+
+.btn{
+	color: #DE3C4B;
+	padding: 20px 40px;
+	background-color: transparent;
+	border: 2px solid #DE3C4B;
+	text-decoration: none;
+	width: 150px;
+	cursor: pointer;
+	font-size: medium;
+}

@@ -1,0 +1,32 @@
+
+.peliculas-caja{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 300px;
+	margin-bottom: 20px;
+	color: white;
+
+}
+.display-peliculas{
+	display: flex;
+	flex-direction: row;
+	margin-top: 70px;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.peliculas-caja1 {
+    width: 100%;
+    padding-top: 60px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.peliculas-caja1 figure img {
+    padding-top: 2rem;
+    width: auto;
+    height: 400px;
+}

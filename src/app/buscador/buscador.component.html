@@ -1,0 +1,14 @@
+<div class="busqueda">
+	<div class="contenedor-buscador"  *ngIf="isVisible">
+		<div class="caja-blanca" >	
+		<input type="search" name="buscar" id="buscador" placeholder="Buscar película" (keyup.enter)="verResultados(searchText.value)" #searchText>
+		<a (click)="isVisible=!isVisible" routerLinkActive="fondo-blanco">
+			<i class="fas fa-redo-alt"></i>
+		</a>
+	</div>
+		<button (click)="verResultados(searchText.value)" type="button" id="buscar">Buscar</button>
+	</div>
+		<a (click)="isVisible=!isVisible">
+			<i class="fas fa-search" *ngIf="!isVisible"></i>
+		</a>
+</div>

@@ -1,0 +1,83 @@
+.caja-login{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100px;
+	padding: 15px 30px;
+	text-decoration: none;
+	cursor: pointer;
+	color: #A5A5A5;
+}
+
+ul{
+	list-style-type: none;
+	overflow: hidden;
+}
+
+.menu-active{
+	color: #DE3C4B;
+}
+
+.caja-login:hover{
+	color: white;
+}
+
+#drop-login {
+	position: absolute;
+	background-color: rgba(4, 12, 15, 0.5);
+	color: white;
+	padding: 10px;
+	width: 250px;
+	z-index: 5;
+	height: 150px;
+	left: 1100px;
+}
+
+/*Formulario*/
+.login{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 20px;
+	margin-left: 10px;
+
+}
+
+.elem-login{
+	margin-bottom: 10px;
+}
+
+.elem-email{
+	margin-bottom: 20px;
+}
+
+label{
+	margin-right: 10px;
+}
+
+input{
+	padding: 5px;
+	border: 0;
+}
+
+#email-input{
+	width: 165px;
+}
+
+/*Botón*/
+.caja-boton{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#enviar{
+	background-color: #DE3C4B;
+	border: 0;
+	padding: 10px 20px;
+	color: white;
+	border: 0;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	width: 150px;
+}
